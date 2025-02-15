@@ -1,0 +1,237 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;    
+}
+
+
+
+.terminal{
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    .janr{
+        width: 90%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2vh;
+        .map{
+            width: 42%;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            button{
+                width: 140px;
+                height: 5vh;
+                border: 1px solid #F29824;
+                border-radius: 5px;
+                background: none;
+                font-weight: 500;
+                font-size: 15px;
+                color: #F29824;
+                cursor: pointer;
+                &:hover{
+                    background: #F29824;
+                    color: #ffffff;
+                }
+                &:nth-of-type(2){
+                    width: 80px;
+                }
+                &:nth-of-type(3){
+                    width: 180px;
+                }
+                &:nth-of-type(4){
+                    width: 120px;
+                }
+            }
+        }
+        button{
+            width: 85px;
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            border: 1px solid #F29824;
+            border-radius: 5px;
+            background: none;
+            font-weight: 500;
+            color: #F29824;
+            cursor: pointer;
+            &:hover{
+                background: #F29824;
+                color: #ffffff;
+            }
+        }
+    }
+
+    .grid{
+        width: 90%;
+        min-height: 40vh;
+        display: grid;
+        grid-template-columns:auto auto auto auto;
+        gap: 30px;
+        .public{
+            width: 300px;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            padding: 4px 10px;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            position: relative;
+
+            a{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+
+            .box{
+                width: 100%;
+                height: 5vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .yil{
+                    width: 55px;
+                    height: 3vh;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #F29824;
+                    h1{
+                        color: #ffffff;
+                        font-weight: 500;
+                        font-size: 13px;
+                    }
+                }
+    
+                .qism{
+                    width: 40px;
+                    height: 18px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #564f4f;
+                    h1{
+                        font-size: 13px;
+                        color: #ffffff;
+                        font-weight: 300;
+                    }
+                }
+    
+                button{
+                    width: 30px;
+                    height: 40px;
+                    border: none;
+                    background: none;
+                }
+            }
+
+
+
+            .title{
+                width: 300px;
+                height: 13vh;
+                display: flex;
+                position: absolute;
+                top: 74%;
+                left: 0%;
+                padding: 15px 5px;
+                background:  rgba(0, 0, 0, 0.6);
+                h1{
+                    color: #ffffff;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+
+                .sezon{
+                    display: none;
+                    h2{
+                        display: none;
+                    }
+    
+                    h3{
+                        display: none;
+                    }
+                }
+
+                p{
+                    display: none;
+                }
+
+                &:hover{
+                    width: 300px;
+                    height: 55vh;
+                    right: 0;
+                    top: 0;
+                    position: absolute;
+                    z-index: 1;
+                    border-radius: 10px;
+                    transition: all 0.4s;
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    padding: 20px 10px;
+                    background:  rgba(0, 0, 0, 0.8);
+
+                    h1{
+                        font-size: 18px;
+                        color: #F4F3F4;
+                    }
+
+                    .sezon{
+                        width: 100%;
+                        height: 3vh;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+    
+                        h3{
+                            font-size: 15px;
+                            margin-right: 5px;
+                            display: block;
+                            color: #A0A0A0;
+                            font-weight: 500;
+                        }
+                    }
+
+                    p{
+                        display: block;
+                        margin-top: 15px;
+                        font-size: 14px;
+                        color: #F4F3F4;
+                    }
+                }
+            }
+        }
+    }
+
+    button{
+        width: 160px;
+        height: 5.3vh;
+        border-radius: 5px;
+        border: none;
+        background: #F29824;
+        color: #ffffff;
+        font-weight: 500;
+        cursor: pointer;
+        margin: 4vh 0;
+        &:hover{
+            background: #f08a04;
+        }
+    }
+}
